@@ -16,9 +16,6 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-main": "0.1.0-dev"
-    },
     "laravel": {
       "providers": [
         "geekspeek\\Ranking\\RankingServiceProvider"
