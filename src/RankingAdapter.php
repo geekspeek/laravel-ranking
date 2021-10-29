@@ -1,6 +1,6 @@
 <?php
 
-namespace LGL\Ranking;
+namespace geekspeek\Ranking;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Redis;

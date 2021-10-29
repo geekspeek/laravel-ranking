@@ -1,6 +1,6 @@
 <?php
 
-namespace LGL\Ranking;
+namespace geekspeek\Ranking;
 
 /**
  * Class RankingManage

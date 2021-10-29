@@ -1,6 +1,6 @@
 {
   "name": "letsgolearn/laravel-ranking",
-  "description": "This is a ranking module.",
+  "description": "This is a ranking module that utilizes Redis for storage.",
   "keywords": [
     "laravel",
     "ranking"
@@ -12,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Larva\\Ranking\\": "src"
+      "geekspeek\\Ranking\\": "src"
     }
   },
   "extra": {
@@ -21,10 +21,10 @@
     },
     "laravel": {
       "providers": [
-        "LGL\\Ranking\\RankingServiceProvider"
+        "geekspeek\\Ranking\\RankingServiceProvider"
       ],
       "aliases": {
-        "Ranking": "LGL\\Ranking\\Facades\\Ranking"
+        "Ranking": "geekspeek\\Ranking\\Facades\\Ranking"
       }
     }
   },

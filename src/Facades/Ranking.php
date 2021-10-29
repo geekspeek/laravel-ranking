@@ -1,9 +1,9 @@
 <?php
 
-namespace LGL\Ranking\Facades;
+namespace geekspeek\Ranking\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use LGL\Ranking\RankingManage;
+use geekspeek\Ranking\RankingManage;
 
 
 /**

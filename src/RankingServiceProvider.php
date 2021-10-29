@@ -4,7 +4,7 @@
  * 
  */
 
-namespace LGL\Ranking;
+namespace geekspeek\Ranking;
 
 use Illuminate\Support\ServiceProvider;
 
