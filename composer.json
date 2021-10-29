@@ -1,5 +1,5 @@
 {
-  "name": "letsgolearn/laravel-ranking",
+  "name": "geekspeek/laravel-ranking",
   "description": "This is a ranking module that utilizes Redis for storage.",
   "keywords": [
     "laravel",
