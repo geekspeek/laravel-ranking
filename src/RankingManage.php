@@ -6,7 +6,7 @@ namespace geekspeek\Ranking;
  * Class RankingManage
  *
  */
-class RankingManage
+class RankingManage extends \Illuminate\Support\Manager
 {
     /**
      * The application instance.
@@ -26,13 +26,13 @@ class RankingManage
         $this->app = $app;
     }
 
-    /**
-     * 
-     * @param string $ranking
-     * @return RankingAdapter
-     */
-    public function get($ranking)
+    public function getDefaultDriver()
     {
-        return new RankingAdapter($ranking, $this->app['config']["services.ranking.redis"] ?? 'default');
+        return 'redis';
+    }
+
+    public function createRedisDriver()
+    {
+        return new RankingAdapter('ranking');
     }
 }

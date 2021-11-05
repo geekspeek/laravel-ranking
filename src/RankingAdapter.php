@@ -22,10 +22,14 @@ class RankingAdapter
      * @param string $ranking
      * @param string $redis
      */
-    public function __construct($ranking, $redis)
+    public function __construct($redis)
     {
-        $this->ranking = $ranking . ':';
         $this->redis = Redis::connection($redis);
+    }
+
+    public function key($ranking) {
+        $this->ranking = $ranking . ':';
+        return $this;
     }
 
     /**
