@@ -2,11 +2,13 @@
 
 namespace geekspeek\Ranking;
 
+use Illuminate\Support\Manager;
+
 /**
  * Class RankingManage
  *
  */
-class RankingManage extends \Illuminate\Support\Manager
+class RankingManage extends Manager
 {
     /**
      * The application instance.

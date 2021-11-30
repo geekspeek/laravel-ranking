@@ -2,7 +2,7 @@
 
 namespace geekspeek\Ranking;
 
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Redis;
 
 class RankingAdapter
@@ -27,7 +27,8 @@ class RankingAdapter
         $this->redis = Redis::connection($redis);
     }
 
-    public function key($ranking) {
+    public function key($ranking)
+    {
         $this->ranking = $ranking . ':';
         return $this;
     }
@@ -48,7 +49,8 @@ class RankingAdapter
      */
     public function getYesterdayTop10()
     {
-        $date = Carbon::now()->subDays(1)->format('Ymd');
+        // $date = Carbon::now()->subDays(1)->format('Ymd');
+        $date = Carbon::now()->format('Ymd');
         return $this->getOneDayRankings($date, 0, 9);
     }
 
